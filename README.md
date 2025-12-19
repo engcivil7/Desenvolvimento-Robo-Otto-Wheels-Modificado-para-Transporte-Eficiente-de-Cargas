@@ -21,7 +21,7 @@ Além disso, o projeto foi documentado e apresentado utilizando a plataforma **O
 
 ---
 
-## 🧩 Modelagem 3D e Impressão
+##  Modelagem 3D e Impressão
 
 Para a reprodução deste projeto, recomenda-se a utilização dos **arquivos STL desenvolvidos pela equipe**, os quais já estão prontos para impressão 3D.
 
