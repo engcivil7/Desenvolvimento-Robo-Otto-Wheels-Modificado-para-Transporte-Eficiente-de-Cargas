@@ -52,3 +52,15 @@ Para a reprodução deste projeto, recomenda-se a utilização dos **arquivos ST
 │   └── artigo.tex
 └── imagens/
     └── otto_wheels_modificado.png
+
+
+
+
+## 👨‍💻 Autores
+
+- Gabriel Santana  
+- Marcelo Machado  
+- Evandro Henrique
+
+
+Projeto desenvolvido para fins acadêmicos, com possibilidade de reprodução e aprimoramento em trabalhos futuros.
