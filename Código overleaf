@@ -1,0 +1,498 @@
+\pdfminorversion=7 
+%\documentclass[xcolor=table]{bredelebeamer}
+\documentclass{beamer}
+
+%\usetheme{Madrid}
+\usetheme{warsaw}
+\definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=blue(pigment)}
+\definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
+\setbeamercolor*{palette quaternary}{fg=white,bg=bostonuniversityred}
+%\usetheme{berlin}
+%\usetheme{marburg}
+%\usetheme{hannover}
+%\usecolortheme{beaver}
+%\usecolortheme{whale}
+\useinnertheme{circles}
+%\useoutertheme{infolines}
+\usefonttheme{default}
+
+\mode<presentation>
+ 
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{natbib}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{color}
+ \usepackage[utf8]{inputenc}
+
+\usepackage{comment}
+\usepackage{setspace}
+
+\usepackage{fancybox}
+
+\usepackage{multicol}
+
+\usepackage{gensymb}
+\usepackage{listings}
+%\usepackage[inline]{enumitem}
+
+\usepackage{lipsum}
+
+
+% dica extra para colocar a apresentação em widescreen.
+%\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5,debug]{beamerposter} 
+% o animate é que faz todo o serviço
+\usepackage{animate} 
+%\usepackage{media9}
+%\usepackage{flashmovie}
+\usepackage[nolist]{acronym}
+\begin{comment}
+\shadowbox{Texto}
+\ovalbox{Texto}
+\fbox{Texto} Texto
+\Ovalbox{Texto}
+\doublebox{Text}
+\end{comment}
+
+
+
+\setbeamercolor{block title}{use=structure,fg=white,bg=red!60!black}
+\setbeamercolor{block body}{use=structure,fg=black,bg=red!5!white}
+
+\setbeamercolor{exampleblock title}{use=structure,fg=white,bg=green!75!black}
+\setbeamercolor{exampleblock body}{use=structure,fg=black,bg=green!5!white}
+
+\setbeamercolor{alertblock title}{use=structure,fg=white,bg=blue!75!black}
+\setbeamercolor{alertblock body}{use=structure,fg=black,bg=blue!5!white}
+
+\renewcommand{\bibsection}{}
+
+%\setbeamercovered{transparent}
+\setbeamercovered{invisible}
+
+\AtBeginSection[ ]{
+\begin{frame}{Sumario}
+\tableofcontents[currentsection,hideothersubsections]
+\end{frame}
+}
+\begin{comment}
+\AtBeginSubsection[ ]{
+\begin{frame}{Summary}
+\tableofcontents[currentsection,currentsubsection]
+\end{frame}
+}
+\end{comment}
+
+\usepackage{pdfpages}
+
+\usepackage{verbatim}
+\usepackage{xcolor}
+% Definindo novas cores
+\definecolor{verde}{rgb}{0,0.5,0}
+\definecolor{cinza}{gray}{0.25}
+\definecolor {marrom}{RGB}{139,69,19}
+\definecolor {ciano}{RGB}{244,255,255}
+\definecolor{verdecpp}{rgb}{0,0.5,0}
+\definecolor{verdejava}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+% Configurando layout para mostrar codigos C++
+\usepackage{listings}
+\usepackage{tikz}
+
+
+\lstdefinestyle{Netlogo}{
+	language={logo},
+	basicstyle=\footnotesize,
+	breaklines=true,
+	morecomment={[l][{\color{cinza}}]{;}},
+	morecomment={[s][{\color{marrom}}]{"}{"}},
+	keywordstyle=\color{blue},
+	keywords={
+		set,ask,
+		if,	setxy,set-defaulf-shape,
+		jump,clear-all,
+		user-message,ifelse},
+		keywordstyle={[2]\color{purple}},				
+			keywords=[2]{breed,globals,cylinderBody,own,
+		cover,patches,patch,here,pcolor,pxor,pycor,and,plabel,
+			color,item,replace,heading,word,ticks,
+			size,heading,
+			count,output,
+			patch,ahead,
+			remove,of,user,one},
+			keywordstyle={[3]\color{verdejava}},				
+			keywords=[3]{breed,
+				globals,cylinderBody,
+				to ,end,
+				},
+				keywordstyle={[4]\color{marrom}},				
+				keywords=[4]{yellow,FALSE},
+				literate={-5}{{\textcolor{marrom}{-5}}}{2}
+				{-1}{{\textcolor{marrom}{-1}}}{2}
+				{0}{{\textcolor{marrom}{0}}}{1}
+					{1}{{\textcolor{marrom}{1}}}{1}
+						{2}{{\textcolor{marrom}{2}}}{1}
+					{20}{{\textcolor{marrom}{20}}}{2}
+					{90}{{\textcolor{marrom}{90}}}{2},
+					keywordstyle={[5]\color{black}},				
+					keywords=[5]{distance-to-jump
+					},
+%backgroundcolor=\color{cyan!5},
+			   breakautoindent=true, xleftmargin=0pt}
+			
+			\lstdefinestyle{JAVA}
+			{
+				language={JAVA},
+				basicstyle=\tiny, 
+				keywordstyle=\color{jpurple}\bfseries,
+				stringstyle=\color{red},
+				commentstyle=\color{verdejava},
+				morecomment=[s][\color{blue}]{/**}{*/},
+				extendedchars=true, 
+				showspaces=false, 
+				showstringspaces=false, 
+			%	numbers=left,
+			%	numberstyle=\tiny,
+				breaklines=true, 
+				%backgroundcolor=\color{cyan!10}, 
+				breakautoindent=true, 
+				captionpos=b,
+				xleftmargin=0pt,
+				tabsize=4
+			}
+			\lstdefinestyle{CPP}
+			{
+				language=C++,
+				alsolanguage={[Sharp]C},
+				basicstyle=\ttfamily\tiny, 
+				keywordstyle=\color{blue}, 
+				stringstyle=\color{verdecpp}, 
+				commentstyle=\color{red}, 
+				extendedchars=true, 
+				showspaces=false, 
+				showstringspaces=false, 
+				%numbers=left,
+			%	numberstyle=\tiny,
+				breaklines=true, 
+			%	backgroundcolor=\color{green!10},
+				breakautoindent=true, 
+				captionpos=b,
+				xleftmargin=0pt,
+			}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[Redes de Petri]{Trabalho de Computação}
+% Titre du diaporama
+
+% Sous-titre optionnel
+
+
+\author[Evandro Henrique, Marcelo Machado e Gabriel Santana]{Evandro Henrique, Marcelo Machado e Gabriel Santana}
+
+
+
+
+\date{{\small \textit{Salvador, BA, Outubro de 2025}}
+
+}
+
+
+\institute{Prof. Dr. Robson Marinho \vskip Universidade do Estado da Bahia (UNEB) }
+
+
+
+
+%\subject{Sujet de votre diaporama}
+% C'est utilisé dans les métadonnes du PDF
+
+
+\logo{
+	\includegraphics[scale=0.2]{images/logo_uneb.png}
+	} 
+
+
+\newcommand{\nologo}{\setbeamertemplate{logo}{}}
+
+
+\makeatletter
+\setbeamertemplate{title page}{%
+
+  %\vbox{}
+%  \vfill
+    %\vspace{3.5cm}% NEW
+  \begingroup
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,rounded=true,shadow=true]{title}
+      \usebeamerfont{title}\inserttitle\par%
+    \end{beamercolorbox}%
+\vspace{0.2cm}
+
+\begin{beamercolorbox}[sep=8pt,center]{author}
+      \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+\vspace{-0.5cm}
+    \begin{beamercolorbox}[sep=8pt,center]{date}
+      \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+
+\begin{beamercolorbox}[sep=8pt,center]{institute}
+      \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+
+
+%    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  \endgroup
+%  \vfill
+}
+\makeatother
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	
+    \acrodef{ACSO}{Centro de Arquitetura de Computadores, Sistemas Inteligentes e Robótica}
+	\acrodef{AMCL}{Adaptive Monte Carlo Localization}
+	\acrodef{IA}{Inteligência Artificial}
+	\acrodef{BahiaRT}{Bahia Robotics Team}
+	\acrodef{LARC}{Latin-American and Brazilian Robotics Competition}
+    \acrodef{FSM}{Finite State Machine}
+    \acrodef{SMA}{Sistema MultiAgentes}
+\acrodef{SCRAM}{Scalable Collision-avoiding Role Assignment with Minimal-makespan}
+	\acrodef{UNEB}{Universidade do Estado da Bahia}
+
+
+{
+\setbeamertemplate{headline}{}
+\begin{frame}
+  \titlepage
+\end{frame}
+}
+%\section{Abstract}
+
+%Logo for remaining pages - if equal to first page, comment the following lines
+\logo{\tikz\node[opacity=.5,inner sep=0pt] {	\includegraphics[scale=0.1]{images/logo_uneb.png}
+	\includegraphics[scale=0.15]{images/logo_acso.jpeg}
+	\includegraphics[scale=0.04]{images/BahiaRT-180x221.png}};} 
+
+\section{O que são redes de petri}
+\acresetall
+\subsection{Redes de petri normais}
+
+
+
+\begin{frame}{\insertsection: \insertsubsection}
+     \centering
+        \usepackage
+ As Redes de Petri são uma ferramenta matemática e gráfica usada para modelar, analisar e simular sistemas que envolvem processos concorrentes, paralelos ou sincronizados — muito comum em áreas como automação, robótica, manufatura, computação e engenharia de controle.
+\end{frame}
+
+\begin{frame}{\insertsection: \insertsubsection}
+     \centering
+        \includegraphics[width=\textwidth]
+A Rede de Petri normal é a forma mais simples do modelo.
+Nela, os tokens (fichas) são idênticos, ou seja, não possuem nenhum tipo de informação ou valor.
+Eles servem apenas para indicar a presença ou ausência de uma condição no sistema.
+\end{frame}
+
+
+\acresetall
+\subsection{Redes de petri coloridas}
+
+\begin{frame}{\insertsection: \insertsubsection}
+\begin{columns}
+    \column{\textwidth}
+    	\includegraphics[width=\linewidth]
+    \column{\textwidth}
+        \color{black}
+    Já a Rede de Petri colorida é uma versão mais avançada e detalhada.
+Nela, cada token tem um “valor” ou “cor”, que representa um tipo de informação específica — como números, textos, comandos, estados, ou até objetos diferentes (por exemplo: peça vermelha, peça azul, peça verde).
+ \end{columns}
+\end{frame}
+
+
+
+\begin{frame}{\insertsection: \insertsubsection}
+\begin{columns}
+    \column{\textwidth}
+    	\includegraphics[width=\linewidth]
+    \column{\textwidth}
+        \centering
+        \color{black}
+Isso significa que uma mesma rede pode diferenciar tipos de dados e controlar várias situações ao mesmo tempo, usando expressões lógicas e variáveis nas transições.
+Na prática, a Rede de Petri colorida combina o modelo visual da Rede de Petri com a lógica de programação, tornando-se ideal para sistemas complexos como:
+controle de robôs, softwares com múltiplos processos, sistemas de manufatura automatizada, redes de comunicação.
+\end{columns}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{frame}{\insertsection}
+%    \transboxout<1>[duration=3]
+%    \transsplithorizontalout<2>[duration=3,direction=270]    
+%    \begin{figure}
+%        \centering
+%    	\includegraphics<1->[height=.2\textheight]{images/orientador%es.png}
+%    \end{figure}
+%\begin{figure}
+%        \centering
+%    	\includegraphics<2->[height=.6\textheight]{images/orientando%s.png}
+%    \end{figure}
+%\end{frame}
+
+\section{Introdução ao Projeto}%
+\subsection{Conceito}%
+\begin{frame}{\insertsection~\insertsubsection}%
+O sistema utiliza um robô de transporte autônomo projetado para otimizar a movimentação de materiais de construção entre o Ponto A (galpão/estoque) e o Ponto B (área da obra). Entre esses dois locais, existe o Ponto C, que funciona como um ponto de apoio estratégico, permitindo que o robô faça paradas rápidas para recarga, descanso operacional ou reorganização de carga.
+
+\end{frame}
+
+
+\begin{frame}{\insertsection~\insertsubsection}
+\begin{columns}
+    \column{0.5\textwidth}
+	\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+	    \centering
+	    \includegraphics[width=.8\linewidth]{transferir.jpg}
+	 \end{minipage}%
+    \column{0.5\textwidth}
+        \begin{minipage}[c][0.4\textheight][c]{\linewidth}
+            \centering
+            \includegraphics[width=.8\linewidth]{transferir (1).jpg}
+        \end{minipage}%
+\end{columns}
+\end{frame}
+
+
+%\subsection{Robôs de Serviço}
+%\begin{frame}{\insertsection~\insertsubsection}
+%\begin{figure}
+%    \centering
+%    \includemedia[activate=onclick,
+%passcontext,
+%transparent,
+%width=1\linewidth,
+%addresource=media/BILL-resumo-2019-captacao.mp4,
+%flashvars={source=media/BILL-resumo-2019-captacao.mp4}
+%]{\includegraphics[width=1\linewidth]{images/bill-three-looks.png}}%{VPlayer.swf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}{\insertsection~\insertsubsection}
+%\begin{columns}
+%    \column{0.5\textwidth}
+%        \begin{minipage}[c][0.4\textheight][c]{\linewidth}
+%            \centering
+%        	\includegraphics[width=.8\linewidth]{images/robo-garcom.%jpg}
+%	\end{minipage}
+%	\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+%	    \centering
+%	    \includegraphics[width=.8\linewidth]{images/pepper-nao.jpg}
+%	 \end{minipage}%
+%    \column{0.5\textwidth}
+%        \begin{minipage}[c][0.4\textheight][c]{\linewidth}
+%            \centering
+%            \includegraphics[width=.8\linewidth]{images/ams-robos-manutencao-campos-esportivos.jpeg}
+%        \end{minipage}
+%         \begin{minipage}[c][0.4\textheight][c]{\linewidth}
+%            \centering
+%            \includegraphics[width=.8\linewidth]{images/denver-bron%cos-beer-pouring-robot.jpg}
+%        \end{minipage}%
+%\end{columns}
+%\end{frame}
+
+\iffalse
+
+\subsection{Robótica Assistiva}
+
+\begin{frame}{\insertsection~\insertsubsection}
+\begin{columns}
+    \column{0.5\textwidth}
+           \centering
+        	\includegraphics[width=.8\linewidth]{images/smartchair.jpg}%
+	   \column{0.5\textwidth}
+            \centering
+    \includemedia[activate=onclick,
+passcontext,
+transparent,
+width=.8\linewidth,
+addresource=media/Braco-controlado-smartphone.mp4,
+flashvars={source=media/Braco-controlado-smartphone.mp4}
+]{\includegraphics[width=.8\linewidth]{images/cadeira-rodas-inteligente.png}}{VPlayer.swf}
+        
+\end{columns}
+\end{frame}
+
+\fi
+
+
+\section{Como vai ser feito}
+\subsection{função do Robô}
+
+\begin{frame}{\insertsection~\insertsubsection}
+    Robô/Transporte Autônomo – Fluxo A ➜ C ➜ B
+
+Ponto A – Galpão/Estoque: Local onde o robô coleta os materiais de construção.
+
+Ponto B – Canteiro de Obras: Destino final, onde os materiais são entregues diretamente para uso na obra.
+
+Ponto C – Ponto de Apoio: Área intermediária estratégica para paradas rápidas, recarga e reorganização da carga.
+
+Benefícios do Sistema:
+
+Otimiza a logística entre o galpão e o canteiro de obras.
+
+Reduz o esforço manual dos trabalhadores.
+
+Aumenta a segurança e a eficiência no transporte de materiais.
+
+Garante fluxo contínuo de suprimentos durante a execução da obra.
+\end{frame}
+
+\subsection{Modelagem em rede de petri simples}
+
+\begin{frame}{\insertsection~\insertsubsection}
+    \centering
+        \includegraphics[width=.7\linewidth]{Captura de tela 2025-10-21 234548.png}
+    
+\end{frame}
+
+\subsection{Modelagem em Fusion 360}
+\begin{frame}{\insertsection~\insertsubsection}
+     \centering
+         \includegraphics[width=.8\linewidth]{WhatsApp Image 2025-12-10 at 15.13.05.jpeg}
+\end{frame}
+\section{Referências}
+\begin{frame}{\insertsection}
+http://www.dca.ufrn.br/~affonso/FTP/DCA409/redes_de_petri.pdf
+
+https://hprobots.com/
+
+HPsim
+ 
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{figure}
+\vspace{-.3cm}
+\Large \centering \textcolor{blue}{Obrigado !} 
+\end{frame}
+
+
+
+\end{document}
