@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+
+
+\begin{center}
+
+\end{center}
+
+\newpage
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{img-0.jpeg}
+\end{center}
+
+\begin{center}
+DEPARTAMENTO DE CIÊNCIAS EXATAS\\
+CURSO ENGENHARIA DE PRODUÇÃO CIVIL
+\end{center}
+
+\begin{center}
+\textbf{RELATÓRIO DA ATIVIDADE PRÁTICA DO PROJETO\\}
+\end{center}
+
+\begin{center}
+Discentes: Marcelo Machado, Evandro Henrique, Gabriel Santana\\
+
+Docente:Robson Marinho\\
+Disciplina:Computação Aplicada à Engenharia
+\end{center}
+
+\newpage
+
+\section{Introdução}
+A montagem do robô Otto insere-se no contexto das atividades práticas de robótica educacional, que buscam aproximar os estudantes dos princípios fundamentais da mecatrônica e da automação. O Otto é um robô de código aberto amplamente utilizado em ambientes de ensino por sua estrutura simples, acessível e modular, permitindo que diferentes componentes eletrônicos e mecânicos sejam integrados de forma intuitiva. Durante a atividade prática, os participantes tiveram contato direto com elementos como servomotores, microcontroladores, sensores e a própria estrutura física impressa em 3D, vivenciando o processo real de construção de um sistema robótico. Essa experiência evidencia a relevância de práticas que aproximam teoria e experimentação, favorecendo a compreensão do funcionamento interno dos dispositivos tecnológicos que fazem parte do cotidiano.
+
+
+\subsection{2 Objetivo da atividade}
+
+A atividade teve como objetivo compreender o funcionamento e a lógica de operação do robô Otto, um modelo amplamente utilizado em estudos de robótica móvel e simulações em canteiros de obras. A prática envolveu a modelagem de seus comandos e fluxos operacionais, buscando representar de forma clara suas ações e interações com o ambiente.
+
+\subsection{3 Modelagem do Robô Otto}
+
+A modelagem foi realizada utilizando princípios de sistemas a eventos discretos, representando os estados e transições do robô. Foram identificados os principais componentes operacionais do Otto (sensores, motores e módulo de controle) e traduzidos em um diagrama funcional. Também foram considerados cenários de operação, como movimentação, detecção de obstáculos e execução de tarefas específicas.
+O modelo produzido permitiu visualizar de maneira clara o fluxo de funcionamento do robô. A representação ajudou a entender como cada comando influencia seu comportamento e como os sensores determinam suas decisões. A prática contribuiu para reforçar o entendimento sobre sistemas automatizados e a importância do controle lógico na robótica.
+
+
+\section{4 Conclusão}
+
+A atividade prática de modelagem forneceu uma visão estruturada do funcionamento do robô Otto, permitindo compreender seus processos de decisão e fluxos operacionais. A experiência foi relevante para o aprimoramento de habilidades de modelagem, análise de processos e entendimento de sistemas robóticos aplicados a ambientes industriais ou de construção.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{WhatsApp Image 2025-11-27 at 21.04.02.jpeg}
+    \caption{Enter Caption}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{WhatsApp Image 2025-11-27 at 21.04.03.jpeg}
+    \caption{Enter Caption}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{WhatsApp Image 2025-11-27 at 21.04.04.jpeg}
+    \caption{Enter Caption}
+    \label{fig:placeholder}
+\end{figure}
+
+\end{document}
+
+
