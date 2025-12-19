@@ -1,10 +1,54 @@
-# Desenvolvimento-Robo-Otto-Wheels-Modificado-para-Transporte-Eficiente-de-Cargas
-Este projeto consiste na modificação do robô Otto Wheels por meio da adição de uma caçamba, visando o transporte eficiente de cargas leves. Utilizou-se Rede de Petri para modelar e compreender suas funções, além de modelagem 3D no Fusion 360 para o desenvolvimento estrutural do robô.
+# Otto Wheels Modificado com Caçamba para Transporte Eficiente
 
-Este projeto tem como objetivo o desenvolvimento e a modificação do robô Otto Wheels, por meio da adição de uma caçamba, com a finalidade de viabilizar o transporte de cargas leves de forma eficiente e controlada. A proposta busca ampliar as funcionalidades originais do robô, tornando-o aplicável a cenários de transporte automatizado, com foco em organização, mobilidade e eficiência operacional.
+##  Descrição do Projeto
 
-Para a modelagem e análise do comportamento funcional do robô, foi utilizada a Rede de Petri, permitindo um melhor entendimento dos estados, transições e fluxos de operação do sistema. Essa abordagem contribui para a correta projeção das funções do robô, auxiliando na identificação de sequências lógicas, paralelismo e possíveis conflitos operacionais durante a execução das tarefas.
+Este projeto tem como objetivo o desenvolvimento e a modificação do robô **Otto Wheels**, por meio da adição de uma **caçamba**, visando o **transporte eficiente de cargas leves**. A modificação amplia as funcionalidades originais do robô, tornando-o mais versátil e aplicável a cenários de transporte automatizado, com foco em eficiência, mobilidade e organização.
 
-Além disso, foi realizada a modelagem tridimensional (3D) do robô e de suas modificações estruturais utilizando o software Fusion 360, possibilitando a visualização detalhada do projeto, a análise geométrica dos componentes e o planejamento adequado da integração da caçamba à estrutura do Otto Wheels.
+Para o planejamento e melhor compreensão do comportamento funcional do robô, foi utilizada a **Rede de Petri**, permitindo a modelagem dos estados, transições e fluxos operacionais do sistema. Essa abordagem auxilia na projeção das funções do robô, facilitando a identificação de sequências lógicas e prevenindo conflitos durante a execução das tarefas.
 
-Dessa forma, o projeto integra conceitos de robótica, modelagem computacional e sistemas discretos, promovendo uma solução didática e funcional para o estudo e aplicação de robôs móveis voltados ao transporte de cargas.
+A **modelagem tridimensional (3D)** do robô e de suas modificações estruturais foi desenvolvida no software **Fusion 360**, possibilitando a visualização detalhada dos componentes, a análise dimensional e a correta integração da caçamba à estrutura do Otto Wheels.
+
+Além disso, o projeto foi documentado e apresentado utilizando a plataforma **Overleaf**, com o objetivo de aprimorar o aprendizado em **codificação LaTeX** e organizar a apresentação do projeto por meio de **slides e documentos acadêmicos** de forma padronizada.
+
+---
+
+##  Metodologia Utilizada
+
+- Modelagem funcional com **Rede de Petri**
+- Modelagem estrutural 3D no **Fusion 360**
+- Documentação e apresentação em **LaTeX (Overleaf)**
+- Impressão 3D das peças modificadas
+
+---
+
+## 🧩 Modelagem 3D e Impressão
+
+Para a reprodução deste projeto, recomenda-se a utilização dos **arquivos STL desenvolvidos pela equipe**, os quais já estão prontos para impressão 3D.
+
+###  Passo a passo recomendado:
+
+1. Abra o **Fusion 360**.
+2. Importe os arquivos **STL fornecidos neste repositório**.
+3. Analise as dimensões e o encaixe das peças em relação à estrutura original do Otto Wheels.
+4. Caso desejado, realize **modificações personalizadas**, como ajustes dimensionais ou alterações no formato da caçamba.
+5. Exporte os arquivos finais em formato **STL**.
+6. Realize a **impressão 3D** (recomenda-se PLA).
+7. Monte as peças no robô e verifique o funcionamento do conjunto.
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+├── README.md
+├── modelagem_3d/
+│   ├── cacamba.stl
+│   ├── suporte.stl
+│   └── montagem.f3d
+├── redes_de_petri/
+│   └── modelo_rede_petri.pdf
+├── overleaf/
+│   ├── slides.pdf
+│   └── artigo.tex
+└── imagens/
+    └── otto_wheels_modificado.png
