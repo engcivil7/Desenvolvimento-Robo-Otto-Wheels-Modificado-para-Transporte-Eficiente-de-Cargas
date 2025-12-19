@@ -56,7 +56,7 @@ Para a reprodução deste projeto, recomenda-se a utilização dos **arquivos ST
 
 
 
-## 👨‍💻 Autores
+## 😂 Autores
 
 - Gabriel Santana  
 - Marcelo Machado  
