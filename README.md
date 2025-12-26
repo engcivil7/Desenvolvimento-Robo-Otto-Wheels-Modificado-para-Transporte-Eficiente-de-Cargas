@@ -46,11 +46,11 @@ Base frontal (azul) → suporte da cabeça e das rodas grandes
 
 Base traseira (azul) → compartimento eletrônico e bateria
 
-4 rodas
+6 rodas
 
 2 rodas grandes laterais (tração)
 
-2 rodas menores traseiras (apoio/estabilidade)
+4 rodas menores traseiras (apoio/estabilidade)
 
 Motores DC (acoplados às rodas grandes)
 
