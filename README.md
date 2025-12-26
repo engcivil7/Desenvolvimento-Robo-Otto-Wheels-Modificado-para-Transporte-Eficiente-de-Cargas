@@ -35,6 +35,171 @@ Para a reprodução deste projeto, recomenda-se a utilização dos **arquivos ST
 6. Realize a **impressão 3D** (recomenda-se PLA).
 7. Monte as peças no robô e verifique o funcionamento do conjunto.
 
+## Passo a passo montagem do robô
+🧱 1. Identificação das partes do robô (modelo da imagem)
+
+Pelo modelo 3D, o robô é composto por:
+
+Módulo frontal (amarelo) → cabeça do Otto (sensor ultrassônico)
+
+Base frontal (azul) → suporte da cabeça e das rodas grandes
+
+Base traseira (azul) → compartimento eletrônico e bateria
+
+4 rodas
+
+2 rodas grandes laterais (tração)
+
+2 rodas menores traseiras (apoio/estabilidade)
+
+Motores DC (acoplados às rodas grandes)
+
+Arduino Nano
+
+Driver de motores
+
+Sensor ultrassônico
+
+Servo motor (movimento da cabeça)
+
+Suporte de bateria
+
+🔩 2. Montagem da base traseira (chassi principal)
+
+Pegue a base traseira azul (parte maior).
+
+Fixe:
+
+O suporte de bateria no fundo da base
+
+O driver de motores em uma área central
+
+O Arduino Nano em local elevado ou lateral
+
+Garanta que:
+
+As portas do Arduino fiquem acessíveis
+
+Os fios possam passar para a parte frontal
+
+👉 Essa base funciona como o “cérebro” do robô.
+
+⚙️ 3. Instalação dos motores e rodas grandes
+
+Encaixe os motores DC nas laterais da base frontal azul.
+
+Fixe os motores com parafusos ou encaixe do próprio chassi.
+
+Acople as rodas grandes diretamente no eixo dos motores.
+
+Verifique se:
+
+As rodas giram livremente
+
+Estão bem alinhadas para evitar desvio
+
+Essas rodas são responsáveis pelo movimento principal do robô.
+
+🛞 4. Montagem das rodas traseiras menores
+
+Na base traseira, fixe as rodas menores:
+
+Uma de cada lado
+
+Essas rodas:
+
+Não são motorizadas
+
+Servem para equilíbrio e estabilidade
+
+Confirme que todas as rodas tocam o solo igualmente.
+
+🧠 5. Fixação da cabeça (parte amarela)
+
+Encaixe a cabeça amarela sobre a base frontal.
+
+Antes de fechar completamente:
+
+Instale o sensor ultrassônico nos dois furos frontais (“olhos”)
+
+Passe os fios do sensor para dentro do corpo.
+
+Parafuse ou encaixe a cabeça firmemente.
+
+🔄 6. Instalação do servo motor
+
+Fixe o servo motor entre a base frontal e a cabeça.
+
+O eixo do servo deve:
+
+Permitir movimento lateral da cabeça
+
+Centralize o servo antes de fixar a cabeça definitivamente.
+
+🔌 7. Ligações elétricas
+Motores
+
+Motores → Driver de motores
+
+Driver → Arduino (pinos digitais)
+
+Sensor ultrassônico
+
+VCC → 5V do Arduino
+
+GND → GND
+
+TRIG → pino digital
+
+ECHO → pino digital
+
+Servo motor
+
+Vermelho → 5V
+
+Marrom/Preto → GND
+
+Amarelo → pino PWM
+
+Alimentação
+
+Bateria → Driver de motores
+
+Driver → Arduino (VIN ou 5V, conforme o projeto)
+
+⚠️ Atenção à polaridade para evitar danos.
+
+💻 8. Programação
+
+Conecte o Arduino ao computador.
+
+Abra a IDE do Arduino.
+
+Instale bibliotecas necessárias (ex.: OttoDIY, Servo).
+
+Carregue o código do Otto Wheels.
+
+Faça o upload.
+
+✅ 9. Testes finais
+
+Ligue o robô.
+
+Verifique:
+
+Se as rodas giram corretamente
+
+Se a cabeça se movimenta
+
+Se o sensor detecta obstáculos
+
+Ajuste:
+
+Sentido dos motores
+
+Ângulo do servo
+
+Sensibilidade do sensor
 ---
 
 ## 📂 Estrutura do Repositório
